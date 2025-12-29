@@ -23,7 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const music = document.getElementById("bg-music");
   const pauseBtn = document.getElementById("pauseBtn");
 
-	container.addEventListener("click", () => {
+	  // 2. PAUSE / PLAY MUSIC Logic
+  pauseBtn.addEventListener("click", (e) => {
+    const btnSpan = pauseBtn.querySelector('span');
+    
+    if (music.paused) {
+      music.play();
+      btnSpan.innerHTML = `MUTE <img src="icons/music.png" alt="Music" height="25">`;
+    } else {
+      music.pause();
+      btnSpan.innerHTML = `PLAY <img src="icons/mute.png" alt="Muted" height="25">`;
+    }
+  });		
+
+  // 1. CLICK TO SHOW NEXT LINE
+  container.addEventListener("click", () => {
+    
     // IDIOT-PROOF: Show buttons and start music on the first click
     if (currentLine === 0) {
       pauseBtn.style.display = "flex";
@@ -54,18 +69,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-	  // 2. PAUSE / PLAY MUSIC Logic
-  pauseBtn.addEventListener("click", (e) => {
-    const btnSpan = pauseBtn.querySelector('span');
-    
-    if (music.paused) {
-      music.play();
-      btnSpan.innerHTML = `MUTE <img src="icons/music.png" alt="Music" height="25">`;
-    } else {
-      music.pause();
-      btnSpan.innerHTML = `PLAY <img src="icons/mute.png" alt="Muted" height="25">`;
-    }
-  });		
+  // SKIP BUTTON REDIRECT
+	skipBtn.addEventListener("click", (e) => {
+			e.stopPropagation(); // Stops the click from triggering the background gif
+			
+			// Add a fade-out effect first for a smooth iOS-style transition
+			document.body.classList.add('fade-out');
+			
+			setTimeout(() => {
+					// REPLACE "home.html" with your actual file name
+					window.location.href = "home.html"; 
+			}, 500); // 500ms delay matches your transition speed
+	}); 
 
 });
 
