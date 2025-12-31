@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>영원한 나의 데이지</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+
+<body class="welcome-page" id="wc">
+
+  <div id="orientation-overlay">
+    <p>Please rotate your device to landscape.</p>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop autoplay>
+    <source src="audio files/A Journey (A Dream of Flight) - Joe Hisaishi.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Top Buttons -->
+  <div>
+    <button class="pause-button" id="pauseBtn">
+      <span>
+        MUTE
+        <img src="icons/mute.png" alt="Muted" height="25">
+      </span>
+    </button>
+
+    <button class="skip-button" id="skipBtn">
+      <span id>
+        SKIP
+        <img src="icons/imageedit_1_2322340014.png" alt="Skip" height="25">
+      </span>
+    </button>
+
+  </div>
+
+  <!-- Welcome Container -->
+  <div id="welcome-container">
+    <p id="welcome-text">
+        <img src="gifs/click.gif" alt="Click" height="80">
+    </p>
+  </div>
+
+  <script src="welcome.js"></script>
+</body>
+</html>

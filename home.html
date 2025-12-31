@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+	<meta name="viewport" content="width=1024">
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body class="home-page">
+
+	<!-- LANDSCAPE WARNING -->
+  <div id="orientation-overlay">
+    <p>Please rotate your device to landscape...</p>
+  </div>
+
+  <!-- FIRST INTERACTION COVER -->
+  <div id="cover-screen">
+    <img src="gifs/click.gif" alt="Tap" height="80">
+  </div>
+
+  <audio id="bgMusic"></audio>
+
+	<!-- MUSIC BUTTON -->
+  <button class="pause-button" id="pauseBtn">
+    <span>
+      <img src="icons/music.png" height="40">
+    </span>
+  </button>
+
+	<!-- HOME WINDOW -->
+  <div id="home-container">
+
+		<div id="home-header">
+			home
+		</div>
+
+		<div class="bottom-buttons">
+    	<button class="choice-button" id="messageBtn">
+				read
+				<img id="messageBtnimg" src="icons/letter.png" alt="Letter" height="12.5px">
+			</button>
+
+    	<button class="choice-button" id="photoBtn">
+				view
+				<img src="icons/photographs.png" alt="Photographs" height="12.5px">
+			</button>
+ 		</div>
+
+		<!-- Update your existing avatarTrigger section -->
+		<span id="avatarTrigger">
+				<img src="gifs/home.gif" alt="Nahoko" height="250" id="avatarImg">
+				<a href="https://open.spotify.com/playlist/4d7faF2eP5Y6JOPA56LBDm?si=UA9yKEyGT6SjiMbSwt3wkg" target="_blank">私のデイジー</a>
+		</span>
+
+		<div class="message-scroll-box">
+			<div class="message-content">
+				<p id="bold">About this website:</p>
+				<p>The year is soon to end, and change comes with it — not only with the new year but new beginnings and challenges. Nevertheless, I wanted to leave this year behind with my deepest sentiments reaching you.</p>
+				<p>I dedicate this website to you, “just because” of the silly hope that you still remember considering me your first patient. If it's otherwise or if I no longer hold that honor, I wanted you to be the patron of my first website regardless.</p>
+				<p>I also don't suppose that you already know, but I wanted to tell you that I've started my journey into the tech field in college... I recently completed the first semester and decided to use the Christmas break to self-learn some tech stuff that won't be taught to us.</p>
+				<p>The buttons above will lead you to either the letter I wrote for you or my photo journal for the coming year. Both are 6-code pin-protected. If the code escapes your memory, try recalling the dates that were important to us back in 2021.</p>
+				<p>I truly hope this doesn't burden you into appreciating it or navigating its contents, but I wanted everything here to reach you nonetheless.</p>
+			</div>
+		</div>
+  </div>	
+
+	<!-- MESSAGE WINDOW -->
+	<div class="popup hidden" id="messageWindow">
+		<div class="popup-header">
+			<span>あなたへ</span>
+			<button class="close" id="x">✕</button>
+		</div>
+
+		<div class="popup-body">
+			<!-- Pincode Access -->
+			<div class="auth-section">
+				<div class="auth-guide">
+          <p class="bfore-unlocking">Enter the correct six-digit key to open this letter.</p>
+        </div>
+
+				<div class="blockings">
+					<input type="password" placeholder="✲✲✲✲✲✲" class="pincode">
+					<button class="unlock">UNLOCK</button>
+				</div>
+				
+				<div>
+					<span class="heads-up">
+						<p>Please take a moment to ensure emotional prudence before unlocking.</p>
+        	</span>
+				</div>
+			</div>
+			
+			<!-- THE LETTER CONTENT -->
+			<div class="popup-content hidden scrollable-letter">
+				<div class="letter-inner">
+					<p class="letter-date">December 31, 2025</p>
+					
+					<p class="letter-salutation">My dearest, Daena—</p>
+					
+					<div class="letter-body">
+						<p>
+							“The wind rises again — we must try to live.”
+						</p>	
+
+						<p>
+							Nowadays, I often find myself thinking of that line from a Ghibli film we watched before, The Wind Rises. Honestly, it is a full-circle moment that I feel genuine tenderness when I hear this before; when I was still with you, and now it’s something I agonizingly repeat in my head to get over you.
+						</p>
+
+						<p>
+							Somehow, it’s now what guides me out of the ground I’ve been buried in neck-deep, since the day you said goodbye. For a long time, I stayed here. I have grieved for months without moving an inch away from this place. I’ve been through multiple phases, one at a time and all at once, most of the time. For months, I have grieved in denial, anger, bargaining, and depression all at once and never once for acceptance.
+						</p>
+
+						<p>
+							I guess I have been afraid — afraid to forget and move, thinking of what would happen if you’d come back and I’m gone in this place?
+						</p>
+
+						<p>
+							But the wind rises again, and I feel it burrowing me up out of this — to live again.
+						</p>
+
+						<p>
+							And so I’m sending my deepest and remaining sentiments to you, sending this letter adrift in it, toward where it flows — against all odds, hoping they reach wherever your life has carried you now.
+						</p>
+
+						<p>
+							And so, like how it goes... I hope this letter finds you well.
+						</p>
+
+						<p>
+							Last October, I received a message from one of your friends. She said it was on your behalf. I understand you told them what happened and how she thought it was necessary to call out my questionable behaviors and posts online; I know that it simply came from care for you, whom I have hurt.
+						</p>
+
+						<p>
+							Honestly, though, by reading it, I felt shaken and deeply overwhelmed. I deactivated for a while because it hurt to be spoken to that way, especially by someone who wasn’t part of our relationship and didn’t have a full knowledge of everything we lived through together.
+						</p>
+
+						<p>
+							I don’t resent her. Yet, coming from the truth of what I feel, I sometimes find myself condemning your friends who I saw speak ill of me in their walls. Still, in radicality, I find myself repeating in my head that their intentions came from their care for you, despite how it caused me pain.
+						</p>
+
+						<p>
+							It didn’t really matter how they hurt me, though — what hurt most was simply that those words weren’t from you.
+						</p>
+
+						<p>
+							If there were words meant for me, even the most hurtful ones, my heart would’ve preferred they came from you.
+						</p>
+
+						<p>
+							Nevertheless, I tried to write her a reply, but every sentence I wrote seemed sharp and defensive even through the revisions.
+						</p>
+
+						<p>
+							So I chose not to send her one.
+						</p>
+
+						<p>
+							Not out of pride, but because I acknowledge how my words would simply start an exchange of hostility that would only put you in distress in the middle.
+						</p>
+
+						<p>
+							Still, you can tell her I’m grateful to know you have people who would fight “fangs and jaw” for you, and I appreciate her concern for you.
+						</p>
+
+						<p>
+							Therefore, instead of replying to her, I decided to write a letter that could reach a place where I can surrender all hostility:
+						</p>
+
+						<p>
+							here, with you.
+						</p>
+
+						<p>
+							That was when I began writing this letter.
+						</p>
+
+						<p>
+							This letter took many sleepless nights and many drafts and revisions. I struggled to gather words that wouldn’t make you feel like I’m pulling you into my grief. Every time I made drafts for this, I had to remove a large portion or two. At some point, I have even abandoned it altogether whenever I feared that even the shape of my words might disturb the peace and life you’re trying to build far from me.
+						</p>
+
+						<p>
+							After all, sending this letter would only break my promise to you, because I promised I won’t message unless you do first. And like how I always do, I swallowed pride and dignity to make a liar and an oath-breaker out of myself again just to reach you.
+						</p>
+
+						<p>
+							As consolation, though, I made sure every sentence was measured with care, and each of them went through questions; some were like these:
+						</p>
+
+						<p>
+							Is this kind?
+							Is this selfish?
+							Is this necessary?
+						</p>
+
+						<p>
+							I wrote this letter with the intention of tenderness, not cause you pain. If, for some reason, I failed and made you cry with this, I apologize. I tried my best to refrain from making you cry again.
+						</p>
+
+						<p>
+							Even now, I don’t feel entitled to your time or to your understanding. So I hope you won’t feel obligated to read this. You can read this at any pace... one paragraph a day, choose to read only a little, or read nothing at all. You can also choose whether to reply or not, attempt to write one you won’t send, or even decide not to respond at all... I will accept that.
+						</p>
+
+						<p>
+							I am content. For me, it is already enough that these words were lifted from my chest. I’m fine knowing that at least the wind carried this far enough to reach the other edge of our world — to you, where you are so far from me now.
+						</p>
+
+						<p>
+							At the time I’m finalizing this letter, the season has felt cruelly colder. Perhaps it’s because it’s the days between Christmas and my birthday, and you’re not here to celebrate with me anymore. What made it colder is that I feel it might have made my head a little sharper with the memories.
+						</p>
+
+						<p>
+							Some nights, I always found myself waking up in the middle of the night from the dreams I still believe to this day, unfailingly, when I’m inside them. In there, you exist so vividly. In waking from those moments, I am reminded of the inevitable, unmistakable knowledge that I am missing you.
+						</p>
+
+						<p>
+							If I speak of longing, it is not merely a claim or some performative stunt in the midst of the trend and era where everyone is a yearner.
+						</p>
+
+						<p>
+							I miss not only your presence, but the you that lived fully in my world:
+						</p>
+
+						<p>
+							the imperfect you
+						</p>
+
+						<p>
+							the you beyond versions
+						</p>
+
+						<p>
+							the you boundless by a pedestal
+						</p>
+
+						<p>
+							the you I love utterly, past flaws.
+						</p>
+
+						<p>
+							It’s late, but I want to say I regret it’s late. I realized how much you matter, how much I value you — all too late. Nonetheless, I hope you felt the vastness of the love I have for you when I surrendered the act, the lies, when I risked it on a losing game — all despite knowing you’d leave. I simply wanted to prove you wrong when you asked if you’re worth the risk, while, of course, hoping you’d stay and at last, build something real with me. Even after all that’s lost, you are worth all that I risked. I hope you won’t question your worth anymore. I’m not saying this to try sway you. It is simply the truth. 
+						</p>
+
+						<p>
+							I hear from the songs I added to the playlist I gave you that real love knows how to let go. I believe that, and it makes me question my love for you time and again, knowing it’s taking me so long to let you go, the one I lost months ago.
+						</p>
+
+						<p>
+							Even putting my belief in that, my heart sometimes argues with my reason. My love for you and the act of letting go are pulling me in opposite directions, and it tears me from the inside out.
+						</p>
+
+						<p>
+							Yet, I believe myself to be smart enough to acknowledge the dignity I should give both of us, and the fact that I must let go and stop waiting for you to come back.
+						</p>
+
+						<p>
+							So, that’s what this letter is — my attempt at learning how to let you go, aside from it as my attempt to live.
+						</p>
+
+						<p>
+							I am trying to set you free from me, even if I don’t think I’ll ever get you out of my system.
+						</p>
+
+						<p>
+							I prayed for clarity. And I hope I’m seeing things clearly now, as I say I’m letting go. Although it’s not your burden to help me anymore, I hope you can help give me clarity. Every time I wake up from dreaming about you, I wake up with hope, even if you said not to hope anymore. I know that in my mind, I think I know you want me to stop hoping. That’s why my dreams and some of your actions confuse me. Is it not true that you are missing me? I foolishly believe you do.
+						</p>
+
+						<p>
+							Far from this confusion, though, I know my fear of being known tangled itself into the love I claim to have for you. I see clearly how I wounded you by crossing boundaries I did not yet know how to respect.
+						</p>
+
+						<p>
+							I understand now how my truth pushed you to the edge when you said you’re taking back your words when you said you’d stay.
+						</p>
+
+						<p>
+							I understand now that choosing to stay with me may have felt like you’d lose your self-identity. It must’ve felt like jumping toward a life where you’ll no longer feel like yourself. 
+						</p>
+
+						<p>
+							I’m sorry that the “great unknown” with me made you choose between yourself and the love you said you have for me.
+						</p>
+
+						<p>
+							I realize how much you’d have to risk just to fulfill the promise of staying. If you think I’m not worth that much risk, I understand.
+						</p>
+
+						<p>
+							I’m sorry if I frightened you.
+						</p>
+
+						<p>
+							All in spite of wanting to beckon you and ask you to sail the sea with me, if you think you’re safer on land, then you are free from walking this tightrope with me.
+						</p>
+
+						<p>
+							I’m glad you kept your promise with me. Do you remember it?
+						</p>
+
+						<p>
+							When I was overthinking, I asked what if you won’t choose me in the end. I know you didn’t know I meant that “What if you can’t accept me?” I know you didn’t know how much pride you’d have to swallow to choose me. Unaware, you said I’m the only one for you. So, I told you it doesn’t mean I’m the only one in your choices. I told you that you can choose yourself too. So, I asked you to promise me to choose yourself always.
+						</p>
+
+						<p>
+							Thank you for not choosing me. Thank you for keeping your promise.
+						</p>
+
+						<p>
+							Despite how much it ached me, I don’t fault you for choosing yourself.
+						</p>
+
+						<p>
+							That if choosing to walk this tightrope with me bent you toward thinking it’d rip and started thinking of how far you could fall,
+						</p>
+
+						<p>
+							Then I am grateful you stepped away before it tore. I’m grateful to fall into the pits alone, knowing I’m falling alone.
+						</p>
+
+						<p>
+							So now, as I fall alone, there is a part of me that remembers like how you wanted me to. You wanted me to keep it sweet in my memories, right?
+						</p>
+
+						<p>
+							I know it might have seemed I find remembering everything so bitterly, but under all the bitterness caused by grieving, I remember everything in its sweetness. I remember.
+						</p>
+
+						<p>
+							Despite our country having only two seasons, wet and dry, I’ll never forget how you colored my life with all four seasons in that one autumn. The colors you painted my Christmases, New Year celebrations, and birthdays will never fade in my memories; I will remember them fondly.
+						</p>
+
+						<p>
+							Everything that reminds me of you will sit with me for a really long while. As a shameful confession, too: I always buy strawberry-flavored drinks and ice cream. You will haunt me:
+						</p>
+
+						<p>
+							When I see:
+						</p>
+
+						<p>
+							Rabbits, thinking about the bunnies we had
+						</p>
+
+						<p>
+							Dogs, thinking about Bessy, Brownies, and Bubbles
+						</p>
+
+						<p>
+							Cats, thinking about how much it triggered you when I told you I wanted one
+						</p>
+
+						<p>
+							All-white uniforms, thinking about how I never saw you wearing one in person
+						</p>
+
+						<p>
+							Van Gogh works, thinking about how much you supported my Van Gogh enthusiasm phase
+						</p>
+
+						<p>
+							Flowers, all of them, especially daisies and kalachuchis
+						</p>
+
+						<p>
+							Bicycles, regretting how I couldn’t fulfill my promise of teaching you how to ride one
+						</p>
+
+						<p>
+							Rubik’s cubes, remembering how much you struggled to learn from me
+						</p>
+
+						<p>
+							The color pink, knowing how much you like this color
+						</p>
+
+						<p>
+							When I hear about:
+						</p>
+
+						<p>Baguio, thinking about how I can possibly step foot there without thinking of you</p>
+						<p>Pangasinan, thinking about when the desire to find you extinguishes</p>
+						<p>Italy, thinking about how I dreamt of living and settling there with you</p>
+						<p>USA, thinking about what if you really go there for work, and what if our paths never cross again.</p>
+						<p>It’s devastating how many more things I can list that you’d haunt my memories. However, I can't list all of them and make this letter any longer.</p>
+						<p>I find myself afraid to forget everything and all about you. It’s gut-wrenching enough to think that my memories easily fade away nowadays, and I try to salvage what little I can. It’s a really terrible feeling knowing the sound of your voice already left my memories, and I can’t hear you anymore.</p>
+						<p>I am afraid time might take away from me more than that. I don’t want to forget a single thing about you.</p>
+						<p>Do you know that these memories, when they fade one by one, aren’t making me feel like losing you all at once, but slowly, in little pieces over time?</p>
+						<p>I am scared because I know for sure that time will cause a cruel, relentless erosion in our memories. And it will take away all that’s left.</p>
+						<p>I am at a loss, knowing how I hold no power against time and forgetting.</p>
+						<p>However, if it’s the opposite for you and you want to forget about me now, I wish time wouldn’t hold back and immediately erase the things that are too painful for you to be reminded about.</p>
+						<p>If I am the personification of time, and if that’s your wish, I’d give in, I’d abdicate — all in spite of wishing I’d stick around your memories for a little while, too.</p>
+						<p>I’m sorry if you’d feel sick if I say this to you, I’m just afraid I’d miss the chance. If this is the last time I can say this to you, then — I love you.</p>
+						<p>And this love shall grow from clinging now. It will now learn to stand at a distance without bitterness.</p>
+						<p>My heart beats to plead one last thing, though. But I hope it’s quiet enough that you’d have to claw at your head to figure out what these words really mean:</p>
+						<p>If one day, somewhere beyond the horizon of this year, where I last heard you loved me too,</p>
+						<p>The separate way you took ever leads you back toward the place where our path started branching apart,</p>
+						<p>know that a lighthouse is waiting steadfastly for that one specific boat to come.</p>
+						<p>If that’s too easy to decode, then know that it’s not a strong beckoning, for I do not wait and expect your return anymore, paralyzed at one place. Those words are simply what remains honest inside me despite my acceptance of the fact that I must let you go.</p>
+						<p>More than anything, I wanted you to know:</p>
+						<p>If there are things you’d wish to apologize about, know that I forgive you, the person holding the key to all my weaknesses and whom I have hurt the most.</p>
+						<p>Whatever silence follows this letter, I will honor it. If that’s how it is, then I will let our ways forever continue to diverge in silence until no noise can possibly fill it up to the brim again.</p>
+						<p>So, in this rising of the wind — as it always does —</p>
+						<p>I will try to live and walk the separate path where you already walked forward.</p>
+						<p>Now that this letter is at the end, you know how letters end, right? If you think of farewells, then you’re right. Nonetheless, I will not say goodbye; I will only wish you good luck with your chosen path. In another life... maybe then you’d stay.</p>
+						<p>Other than farewells, some letters come to a close like this: Yours, Dani. But I apologize if the Signature part of this letter still doesn’t contain my name.</p>
+						<p>With you, I find comfort in knowing I can be no one, just yours.</p>
+					</div>
+					
+					<div class="letter-signature">
+						<p>Yours</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  <!-- PHOTO WINDOW -->
+	<div class="popup hidden" id="photoWindow">
+		<div class="popup-header">
+			<span>2026年1月</span>
+			<button class="close" id="x">✕</button>
+		</div>
+
+
+		<div class="popup-body">
+			<!-- PIN GATE -->
+			<div class="auth-section">
+				<div class="auth-guide">
+          <p class="bfore-unlocking">Enter the correct six-digit key to view my photojournal entries for the month of January.</p>
+        </div>
+
+				<div class="blockings">
+					<input type="password" placeholder="✲✲✲✲✲✲" class="pincode">
+					<button class="unlock">UNLOCK</button>
+				</div>
+				
+				<div>
+					<span class="heads-up">
+						<p>Please take a moment to ensure emotional prudence before unlocking.</p>
+        	</span>
+				</div>
+			</div>
+
+			<!-- JOURNAL -->
+			<div class="popup-content hidden">
+				<div class="profile-section">
+					<img class="profile-pic" src="imgs/profile.jpg">
+					
+					<div class="profile-info">
+							<p class="profile-name">ianuarius archive</p>
+							<p class="profile-caption">
+								<!-- Here is how the world looked as I started again, realizing that time is moving forward — with or without us. -->
+							</p>
+							<p class="profile-caption">
+								The archive is currently empty. Photojournal entries will be processed and available for viewing on the night of the next day.
+							</p>
+					</div>
+				</div>
+
+				<div class="gallery-grid" id="photoGallery"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FULLSCREEN JOURNAL VIEWER -->
+	<div class="viewer-overlay hidden" id="journalViewer">
+		<button class="viewer-exit" id="closeViewer">✕</button>
+
+		<div class="viewer-shell">
+			<img id="viewerImage">
+
+			<div class="viewer-entry" id="viewerText">
+				<!-- filled dynamically -->
+			</div>
+		</div>
+	</div>
+
+	<div id="portrait-viewer" class="hidden">
+    <button id="close-portrait">✕</button>
+    <div class="portrait-container">
+        <!-- Replace 'path/to/your/portrait.jpg' with your actual drawing file -->
+        <img src="imgs/portrait.jpeg" alt="Portrait" id="full-portrait">
+        
+        <!-- DOWNLOAD BUTTON -->
+        <a href="imgs/portrait.jpeg" download="Daisy_Portrait.jpg" target="_blank" class="download-link">
+            Download Image
+        </a>
+    </div>
+	</div>
+
+  <script src="home.js"></script>
+</body>
+</html>
